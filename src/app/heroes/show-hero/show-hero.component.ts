@@ -8,7 +8,6 @@ import { HeroService } from '../hero.service';
 @Component({
   selector: 'app-show-hero',
   templateUrl: './show-hero.component.html',
-  styleUrls: ['./show-hero.component.scss'],
 })
 export class ShowHeroComponent implements OnInit {
   public hero$: Observable<Hero>;
@@ -16,10 +15,7 @@ export class ShowHeroComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private heroService: HeroService
-  ) {
-    activatedRoute.params.subscribe(console.log);
-    activatedRoute.queryParams.subscribe(console.log);
-  }
+  ) {}
 
   ngOnInit(): void {
     this.hero$ = this.activatedRoute.params.pipe(
