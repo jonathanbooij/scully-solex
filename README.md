@@ -1,4 +1,16 @@
-# Tour of Heroes
+# Tour of heroes
+
+Serve backend:
+
+- npm run backend
+
+Serve frontend:
+
+- ng build
+- npx scully
+- npx scully serve
+
+# fork from Tour of Heroes
 
 This project was created to help represent a fundamental app written with Angular. The heroes and villains theme is used throughout the app.
 
