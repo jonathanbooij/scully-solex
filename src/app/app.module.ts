@@ -9,6 +9,7 @@ import { AboutComponent } from './about.component';
 import { RouterModule } from '@angular/router';
 import { externalModules } from './build-specific';
 import { declarations } from './core';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [AppComponent, AboutComponent, declarations],
@@ -17,7 +18,8 @@ import { declarations } from './core';
     HttpClientModule,
     RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
     AppStoreModule,
-    externalModules
+    externalModules,
+    ScullyLibModule
   ],
   bootstrap: [AppComponent]
 })

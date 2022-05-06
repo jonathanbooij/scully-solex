@@ -12,7 +12,9 @@
     "quick": "concurrently \"npm run backend\" \"npm run start-ng\"",
     "cypress": "npx cypress open",
     "e2e": "concurrently \"npm run quick\" \"npm run cypress\"",
-    "backend": "json-server --watch db.json --routes routes.json --port 7627 --middlewares ./node_modules/json-server-reset"
+    "backend": "json-server --watch db.json --routes routes.json --port 7627 --middlewares ./node_modules/json-server-reset",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,7 @@
     "@angular/forms": "^13.3.6",
     "@angular/platform-browser": "^13.3.6",
     "@angular/platform-browser-dynamic": "^13.3.6",
+    "@angular/platform-server": "^12",
     "@angular/router": "^13.3.6",
     "@ngrx/data": "^12.5.1",
     "@ngrx/effects": "^12.5.1",
@@ -30,6 +33,9 @@
     "@ngrx/store": "^12.5.1",
     "@ngrx/store-devtools": "^12.5.1",
     "@scullyio/init": "^2.1.21",
+    "@scullyio/ng-lib": "^2.1.0",
+    "@scullyio/platform-server": "^2.1.0",
+    "@scullyio/scully": "^2.1.0",
     "bulma": "^0.8.2",
     "core-js": "^3.7.0",
     "express": "^4.16.4",
